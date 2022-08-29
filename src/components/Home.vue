@@ -24,8 +24,9 @@
                 </div>
               </div>
               <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" class="font-medium text-gray-500 hover:text-gray-900">{{ item.name }}</a>
-                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+                <router-link v-for="item in navigation" :key="item.name" :to="item.href" class="font-medium text-gray-500 hover:text-gray-900" :class="{ 'text-indigo-600': item.href === routePath }">
+                  {{ item.name }}
+                </router-link>
               </div>
             </nav>
           </div>
@@ -89,11 +90,16 @@
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+
+const route = useRoute()
+const routePath = computed(() => route.path)
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Preços', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Sobre', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'Preços', href: '/prices' },
+  { name: 'Marketplace', href: '/marketplace' },
+  { name: 'Sobre', href: '/about' },
 ]
 </script>
