@@ -99,7 +99,6 @@ const routePath = computed(() => route.path)
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Preços', href: '/prices' },
-  { name: 'Marketplace', href: '/marketplace' },
   { name: 'Sobre', href: '/about' },
 ]
 </script>
