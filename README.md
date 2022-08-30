@@ -17,7 +17,7 @@ via chat para tirar dúvidas, assim como agendar visitas e por fim, iniciar comp
 1) Clone o projeto
 
 ```sh
-$ git clone 
+$ git clone git@github.com:felipe-dna/house-shop.git
 ```
 
 2) Neste projeto usamos yarn e node versão 16 (nvm), para isso, use:
