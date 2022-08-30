@@ -210,14 +210,6 @@ const products = [
     imageSrc: 'https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
-  {
-    id: 23,
-    name: 'Imóvel  amplo',
-    href: '#',
-    price: 'R$ 1.500.000,00',
-    imageSrc: '/src/assets/house-4.jpg',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },
 ]
 </script>
 
